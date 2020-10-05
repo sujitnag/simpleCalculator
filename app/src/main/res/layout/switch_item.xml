@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="347dp"
+        android:layout_height="107dp"
+        android:layout_centerInParent="true"
+        android:autoText="true"
+        android:buttonTint="#3F51B5"
+        android:checked="true"
+        android:cursorVisible="false"
+        android:focusable="auto"
+        android:showText="false"
+
+        android:splitTrack="false"
+        android:textColor="#E91E63"
+        android:textStyle="bold"
+        android:thumb="@drawable/mr_cast_thumb"
+        android:visibility="visible"
+        app:showText="true"
+        app:thumbTint="#4CAF50" />
+</RelativeLayout>
+

@@ -20,7 +20,7 @@
     <LinearLayout
         android:id="@+id/frgContener"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
 
         android:orientation="horizontal">
 
@@ -29,21 +29,16 @@
 
     <TableLayout
         android:id="@+id/CalTable"
-        android:layout_width="wrap_content"
-        android:layout_height="458dp"
+        android:layout_width="855dp"
+        android:layout_height="232dp"
         android:layout_gravity="center"
         android:gravity="center_horizontal|center_vertical">
 
 
         <TextView
             android:id="@+id/onlyshow"
-            android:layout_width="wrap_content"
-            android:layout_height="63dp"
-            android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:scrollbarAlwaysDrawVerticalTrack="true"
-            android:scrollbarStyle="insideInset"
-            android:scrollbars="vertical"
-            android:scrollHorizontally="true"
+            android:layout_width="605dp"
+            android:layout_height="30dp"
             android:textAlignment="viewEnd"
             android:textSize="12sp"
             android:textStyle="italic" />
@@ -56,13 +51,11 @@
 
             <TextView
                 android:id="@+id/DisplayT"
-                android:layout_width="258dp"
-                android:layout_height="133dp"
-                android:layout_span="6"
-
+                android:layout_width="186dp"
+                android:layout_height="50dp"
+                android:layout_span="10"
                 android:freezesText="false"
                 android:hint="5+8"
-                android:scrollbars="vertical"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -219,21 +212,6 @@
                 android:text="4" />
 
             <Button
-                android:id="@+id/button5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minWidth="50dp"
-                android:onClick="Operators"
-                android:text="(" />
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/Operant2"
-            android:layout_width="match_parent"
-            android:layout_height="50dp">
-
-            <Button
                 android:id="@+id/button11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -249,82 +227,97 @@
                 android:onClick="Operatands"
                 android:text="6" />
 
-            <Button
-                android:id="@+id/button13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minWidth="50dp"
-                android:onClick="Operatands"
-                android:text="7" />
+            <TableRow
+                android:id="@+id/Operant2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
 
-            <Button
-                android:id="@+id/button14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minWidth="50dp"
-                android:onClick="Operatands"
-                android:text="8" />
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="50dp"
+                    android:onClick="Operatands"
+                    android:text="7" />
 
-            <Button
-                android:id="@+id/button15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minWidth="50dp"
-                android:onClick="Operatands"
-                android:text="9" />
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="50dp"
+                    android:onClick="Operatands"
+                    android:text="8" />
 
-            <Button
-                android:id="@+id/button20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minWidth="50dp"
-                android:onClick="Operators"
-                android:text=")" />
+                <Button
+                    android:id="@+id/button15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="50dp"
+                    android:onClick="Operatands"
+                    android:text="9" />
 
-        </TableRow>
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="50dp"
+                    android:onClick="Operators"
+                    android:text="(" />
 
-        <TableRow
-            android:id="@+id/spl"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="center">
+                <Button
+                    android:id="@+id/button20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="50dp"
+                    android:onClick="Operators"
+                    android:text=")" />
 
-            <Button
-                android:id="@+id/button19"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_back"
-                android:minWidth="50dp"
-                android:onClick="back" />
+            </TableRow>
 
-            <Button
-                android:id="@+id/button17"
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:minWidth="0dp"
-                android:onClick="Operatands"
-                android:text="."
-                android:textColor="@color/cardview_dark_background"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+            <TableRow
+                android:id="@+id/spl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center">
 
-            <Button
-                android:id="@+id/button18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_remove"
-                android:minWidth="50dp"
-                android:onClick="refresh" />
+                <Button
+                    android:id="@+id/button19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_back"
+                    android:minWidth="50dp"
+                    android:onClick="back" />
 
-            <Button
-                android:id="@+id/button22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/mr_media_play_light"
-                android:backgroundTint="#2196F3"
-                android:backgroundTintMode="src_atop"
-                android:minWidth="50dp"
-                android:onClick="replay" />
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:minWidth="0dp"
+                    android:onClick="Operatands"
+                    android:text="."
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_remove"
+                    android:minWidth="50dp"
+                    android:onClick="refresh" />
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mr_media_play_light"
+                    android:backgroundTint="#2196F3"
+                    android:backgroundTintMode="src_atop"
+                    android:minWidth="50dp"
+                    android:onClick="replay" />
+            </TableRow>
+
         </TableRow>
 
     </TableLayout>

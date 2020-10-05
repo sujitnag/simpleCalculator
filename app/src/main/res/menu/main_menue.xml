@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/smartCal"
+        android:checkable="true"
+        android:checked="false"
+        android:title="smart"
+        app:actionLayout="@layout/switch_item"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/setting"
+        android:actionLayout="@layout/switch_item"
+        android:checkable="true"
+        android:checked="false"
+        android:enabled="true"
+        android:title="Setting"
+        android:visible="true"
+        app:showAsAction="never" />
+</menu>

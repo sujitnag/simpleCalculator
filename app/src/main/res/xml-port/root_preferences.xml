@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="visible">
+    <PreferenceCategory android:title="Setting">
+
+    </PreferenceCategory>
+    <ListPreference
+        android:background="@color/colorAccent"
+        android:defaultValue="true"
+        android:entries="@array/colorsN"
+        android:entryValues="@array/colorsV"
+        android:key="TheamColor"
+        android:title="Theam Color"
+        app:useSimpleSummaryProvider="true" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="sound"
+        android:title="Sound" /><![CDATA[
+
+    />
+
+]]>
+</PreferenceScreen>
